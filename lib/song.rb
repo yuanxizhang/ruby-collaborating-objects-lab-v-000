@@ -16,12 +16,12 @@ class Song
   def self.new_by_filename(file_name) 
     # parse the filename to find the song name and artist name
     f_name = file_name.split(".").first 
-    @artist.name = f_name.split(" - ")[0].strip
-    @name = f_name.split(" - ")[1].strip
+    artist = f_name.split(" - ")[0].strip
+    song_name= f_name.split(" - ")[1].strip
     
     # create a new song instance 
-    song = self.new(song_name)
-    song.artist = song.artist_name=(artist_name)
+    song = self.new(s_name)
+    song.artist = song.artist_name=(artist)
     
     song
   end
