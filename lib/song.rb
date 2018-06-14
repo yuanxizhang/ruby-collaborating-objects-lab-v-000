@@ -22,7 +22,7 @@ class Song
     # create a new song instance 
     new_song = self.new(song_name)
     new_song.artist = Artist.find_or_create_by_name(artist)
-    
+    new_song.artist.add_song
     new_song
   end
 end 
