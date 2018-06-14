@@ -13,9 +13,9 @@ class Song
     Artist.find_or_create_by_name(name)
   end
   
-  def self.new_by_filename(file) 
+  def self.new_by_filename(file_name) 
     # parse the filename to find the song name and artist name
-    f_name = file.split(".").first 
+    f_name = file_name.split(".").first 
     @artist.name = f_name.split(" - ")[0].strip
     @name = f_name.split(" - ")[1].strip
     
