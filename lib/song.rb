@@ -20,8 +20,8 @@ class Song
     song_name= f_name.split(" - ")[1].strip
     
     # create a new song instance 
-    song = self.new(song_name)
-    song.artist = song.artist_name=(artist)
+    new_song = self.new(song_name)
+    new_song.artist = Artist.
     
     song
   end
